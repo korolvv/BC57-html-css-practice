@@ -105,3 +105,20 @@ ul {
   color: #4985ff;
   text-decoration: underline;
 }
+/* projects */
+
+.projects {
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.projects-title {
+  margin-bottom: 50px;
+  color: #000000;
+  text-align: center;
+}
+
+.projects-list {
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
