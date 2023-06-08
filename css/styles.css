@@ -1,6 +1,7 @@
 body {
 	font-family: "Montserrat", sans-serif;
 	background-color: #de505057;
+	
 }
 
 /* Optimization */
@@ -74,12 +75,16 @@ ul {
 
 /* * Hero */
 
+.hero{
+padding: 220px 0 347px;	
+}
 .main-title {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: calc(20 / 16);
 	text-align: center;
 	color: #ffffff;
+	margin-bottom: 20px;
 }
 .hero-descr {
 	font-weight: 800;
@@ -87,6 +92,7 @@ ul {
 	line-height: 64px;
 	text-align: center;
 	color: #ffffff;
+	margin-bottom: 50px;
 }
 .main-link {
 	width: 200px;
@@ -95,6 +101,9 @@ ul {
 	background: #4985ff;
 	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 	border-radius: 30px;
+	display: block;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 /* * Services */
