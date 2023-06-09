@@ -19,7 +19,7 @@
       <div class="container">
         <nav class="nav-container">
           <ul class="list header-list">
-            <li><a class="link" href="#">Головна</a></li>
+            <li><a class="link navigation-link is-active" href="#">Головна</a></li>
             <li><a class="link" href="#">Наші проекти</a></li>
             <li><a class="link" href="#">Послуги</a></li>
             <li><a class="link" href="#">Новини</a></li>
@@ -50,12 +50,11 @@
           </p>
           <ul class="list services-list">
             <li class="services-list-item">
-              <img
-                src="./images/page.png"
-                alt="page logo"
-                width="120"
-                height="120"
-              />
+              <div>
+                <svg class="services-icon" width="90" height="90">
+                  <use href="./images/icons.svg#icon-Frame-1"></use>
+                </svg>
+              </div>
               <div class="services-wrapper">
                 <h3 class="subtitle services-subtitle">Створення сайтів</h3>
                 <p class="descr services-text">
@@ -65,12 +64,11 @@
               </div>
             </li>
             <li class="services-list-item">
-              <img
-                src="./images/page.png"
-                alt="page logo"
-                width="120"
-                height="120"
-              />
+              <div>
+                <svg class="services-icon" width="90" height="90">
+                  <use href="./images/icons.svg#icon-Frame-1"></use>
+                </svg>
+              </div>
               <div class="services-wrapper">
                 <h3 class="subtitle services-subtitle">Створення сайтів</h3>
                 <p class="descr services-text">
@@ -80,12 +78,11 @@
               </div>
             </li>
             <li class="services-list-item">
-              <img
-                src="./images/page.png"
-                alt="page logo"
-                width="120"
-                height="120"
-              />
+              <div>
+                <svg class="services-icon" width="90" height="90">
+                  <use href="./images/icons.svg#icon-Frame-1"></use>
+                </svg>
+              </div>
               <div class="services-wrapper">
                 <h3 class="subtitle services-subtitle">Створення сайтів</h3>
                 <p class="descr services-text">
@@ -115,48 +112,38 @@
           />
           <ul>
             <li>
-              <img
-                src="./images/web-programming.png"
-                alt="web programmimg"
-                width="30"
-                height="30"
-              /><span class="standarts-span">125</span>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-web-programming"></use>
+              </svg>
+              <span class="standarts-span">125</span>
               <p class="descr">Our projects</p>
             </li>
             <li>
-              <img
-                src="./images/web-programming.png"
-                alt="web programmimg"
-                width="30"
-                height="30"
-              /><span class="standarts-span">125</span>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-web-programming"></use>
+              </svg>
+              <span class="standarts-span">125</span>
               <p class="descr">Our projects</p>
             </li>
             <li>
-              <img
-                src="./images/web-programming.png"
-                alt="web programmimg"
-                width="30"
-                height="30"
-              /><span class="standarts-span">125</span>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-web-programming"></use>
+              </svg>
+              <span class="standarts-span">125</span>
               <p class="descr">Our projects</p>
             </li>
             <li>
-              <img
-                src="./images/web-programming.png"
-                alt="web programmimg"
-                width="30"
-                height="30"
-              /><span class="standarts-span">125</span>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-web-programming"></use>
+              </svg>
+              <span class="standarts-span">125</span>
               <p class="descr">Our projects</p>
             </li>
             <li>
-              <img
-                src="./images/web-programming.png"
-                alt="web programmimg"
-                width="30"
-                height="30"
-              /><span class="standarts-span">125</span>
+              <svg width="30" height="30">
+                <use href="./images/icons.svg#icon-web-programming"></use>
+              </svg>
+              <span class="standarts-span">125</span>
               <p class="descr">Our projects</p>
             </li>
           </ul>
@@ -278,8 +265,12 @@
           <h2>Відео про нашу роботу</h2>
           <p>Просто подивіться, як ми працюємо</p>
           <video src="">
-            <button type="button"><img src="" alt="" /> Дивитись відео</button>
           </video>
+          <button class="video-button" type="button">
+            <svg class="video-icon" width="60" height="60">
+              <use href="./images/icons.svg#icon-play-button"></use>
+            </svg> Дивитись відео
+          </button>
         </div>
       </section>
       <!-- <section></section> -->
