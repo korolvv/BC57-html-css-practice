@@ -6,6 +6,7 @@
 
 body {
 	font-family: "Montserrat", sans-serif;
+	position: relative;
 }
 
 /* Optimization */
@@ -15,7 +16,15 @@ a {
 
 ul {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
+
+h1,h2,h3,p {
+	margin: 0;
+	padding: 0;
+}
+
 
 /* * General styles */
 
@@ -59,8 +68,10 @@ ul {
 */
 
 .header {
+	position: absolute;
+	width: 100%;
 	border-bottom: 1px solid rgba(161, 161, 161, 0.5);
-	background-color: #de505057;
+	top: 0;
 }
 
 .header-list {
@@ -101,9 +112,10 @@ ul {
 /* * Hero */
 
 .hero {
-	padding: 220px 0 335px;
+	padding: 320px 0 335px;
 	background: rgba(0, 0, 0, 0.2) url(/images/hero_bg.jpg) no-repeat center
 		center;
+	background-size: cover;
 }
 .main-title {
 	font-weight: 500;
@@ -294,7 +306,42 @@ ul {
 	justify-content: space-between;
 }
 
+
+/* --------------video section ----------- */
+
+.video-section {
+	padding-top: 70px;
+	padding-bottom: 85px;
+	background-image: url(../images/video-example.jpg);
+	background-repeat: no-repeat;
+}
+
+.video-header {
+	margin-bottom: 30px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.video-descr {
+	margin-bottom: 70px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.video-thumb {
+	padding-bottom: 85px;
+	margin-bottom: 85px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	border-bottom: 1px solid #E0E0E0;
+}
+
 .video-button {
+	position: absolute;
+	top: calc(50% - 42.5px);
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -303,7 +350,7 @@ ul {
 	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
 	border: 1px solid #ffffff;
 	border-radius: 200px;
-	background-color: grey;
+	background-color: transparent;
 
 	font-weight: 500;
 	font-size: 16px;
@@ -314,4 +361,27 @@ ul {
 
 .video-icon {
 	margin-right: 21px;
+}
+
+
+.video-subtitle {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.form-descr {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+}
+
+.text-warning {
+	font-size: 13px;
+	line-height: 1.6;
+	text-align: center;
 }
