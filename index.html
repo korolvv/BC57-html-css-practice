@@ -22,18 +22,36 @@
 				<nav class="nav-container">
 					<ul class="list header-list">
 						<li>
-							<a class="link navigation-link is-active" href="#">Головна</a>
+							<a data-scroll class="link navigation-link is-active" href="#main"
+								>Головна</a
+							>
 						</li>
-						<li><a class="link navigation-link" href="#">Проекти</a></li>
-						<li><a class="link navigation-link" href="#">Послуги</a></li>
-						<li><a class="link navigation-link" href="#">Новини</a></li>
-						<li><a class="link navigation-link" href="#">Контакти</a></li>
+						<li>
+							<a data-scroll class="link navigation-link" href="#projects"
+								>Проекти</a
+							>
+						</li>
+						<li>
+							<a data-scroll class="link navigation-link" href="#services"
+								>Послуги</a
+							>
+						</li>
+						<li>
+							<a data-scroll class="link navigation-link" href="#news"
+								>Новини</a
+							>
+						</li>
+						<li>
+							<a data-scroll class="link navigation-link" href="#contacts"
+								>Контакти</a
+							>
+						</li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 		<main>
-			<section class="hero">
+			<section class="hero" id="main">
 				<div class="container">
 					<h1 class="main-title">Передова IT студія</h1>
 					<h2 class="hero-descr">
@@ -42,7 +60,7 @@
 					<a class="link main-link" href="#">Наші проекти</a>
 				</div>
 			</section>
-			<section class="services">
+			<section class="services" id="services">
 				<div class="container">
 					<h2 class="title services-title">
 						Ми створюємо мобільні додатки для великих корпорацій
@@ -221,7 +239,7 @@
 					</ul>
 				</div>
 			</section>
-			<section class="projects">
+			<section class="projects" id="projects">
 				<div class="container">
 					<h2 class="title projects-title">Наші проекти</h2>
 					<p class="descr services-descr">
@@ -287,7 +305,9 @@
 							Дивитись відео
 						</button>
 					</div>
-					<h3 class="subtitle video-subtitle">Підпишіться на нашу розсилку</h3>
+					<h3 class="subtitle video-subtitle" id="news">
+						Підпишіться на нашу розсилку
+					</h3>
 					<p class="descr form-descr">
 						Корисні статті, акції, новини - отримайте все це зараз!
 					</p>
@@ -301,7 +321,7 @@
 				</div>
 			</section>
 		</main>
-		<footer class="footer">
+		<footer class="footer" id="contacts">
 			<div class="container">
 				<ul class="footer-list">
 					<li>
@@ -451,6 +471,11 @@
 				</p>
 			</div>
 		</footer>
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+		<script>
+			var scroll = new SmoothScroll('a[href*="#"]');
+		</script>
 		<script src="js/script.js"></script>
 	</body>
 </html>
