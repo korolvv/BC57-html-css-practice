@@ -1,0 +1,30 @@
+.container {
+  padding: 0 15px;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-link {
+  font-weight: 800px;
+  font-size: 18px;
+  line-height: 1.17;
+  color: #fff;
+  display: block;
+  text-transform: uppercase;
+}
+
+.header-btn {
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.nav-container {
+  display: none;
+}
